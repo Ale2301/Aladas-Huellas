@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lora:ital@1&family=Passions+Conflict&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 2.455rem;
+}
+body{
+    background-color:rgb(122, 191, 248) 
+}
+.err{
+    display: none;
+}
+#contenedor{
+    background-color:rgb(122, 191, 248)
+}
+.sub{
+    text-decoration: underline;
+}
+#header{
+    margin-bottom: 0rem;
+    background-image: url(https://static1.elcorreo.com/www/multimedia/202002/14/media/cortadas/cieloazul1-k1zG-U100155473657HzH-1968x1216@RC.jpg);
+    background-size: cover; 
+    max-height: 8.75rem;
+    display:grid;
+	grid-template-columns: 4fr 7.5fr;
+	grid-template-rows: 5fr 5fr;
+	grid-gap: 0.045rem;
+    grid-template-areas:
+    "logo name";
+    border-bottom: solid rgb(0, 0, 0) 0.089rem;
+}
+.logo{
+    margin-top: -0.6rem;
+    grid-area: logo;
+    width: 6rem;
+    height: 6rem;
+    opacity: 90%;
+}
+#name{
+    display: flex;
+    grid-area: name;
+    font-size: 3.182rem;
+    color:rgb(0, 0, 0);
+    flex-direction: row;
+    margin-top: 1.136rem;
+}
+#name span{
+    font-size: 3.545rem;
+    margin-top: 1.136rem;
+    font-family: 'Passions Conflict', cursive;
+    text-decoration: underline;
+}
+.titulito{
+    justify-content: center;
+}
+.alas{
+    height: 3.636rem;
+    margin-left: 0.318rem;
+    margin-right: 0.136rem;
+}
+.titleContacto p{
+    font-size: 2.009rem;
+    text-align: center;
+}
+.descripcion{
+    background-color: rgba(4,77,173,255);
+    height: 13.636rem;
+}
+.descripcion p{
+    font-size: 2.409rem;
+    text-decoration: underline;
+    font-family: 'Hurricane', cursive;
+}
+.descripcion div{
+    background-color: rgba(4,77,173,255);
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: 2.409rem;
+    text-decoration: underline;
+    font-family: 'Hurricane', cursive;
+}
+.grillaContacto{
+    width: 31.696rem;
+    max-height: 11.223rem;
+    background-color: rgba(4,77,173,255);
+    display: grid;
+    border:solid rgb(0, 0, 0) 0.089rem;
+    grid-template-columns: 2fr 1fr;    
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "email emailDato"
+    "telefono telefonoDato"
+    "celular celularDato";
+    align-items: center;
+}
+.email{
+    grid-area: email;
+}
+.emailDato{
+    grid-area: emailDato;
+}
+.emailDato a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.borderBottom{
+    border-bottom: solid rgb(129, 19, 96) 0.223rem;
+}
+.hover:hover{
+    color: lightskyblue
+}
+.telefono{
+    grid-area: telefono;
+}
+.telefonoDato{
+    grid-area: telefonoDato;
+}
+.telefonoDato a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.celular{
+    grid-area: celular;
+}
+.celularDato{
+    grid-area: celularDato;
+}
+.celularDato a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.botonDeWppSticky{
+    background-color: transparent;
+    position: fixed;
+    bottom: -2.232rem;
+    right: 0.893rem;
+    width: 4.464rem;
+    transition: .1s;
+}
+.botonDeWppSticky{
+    width: 170px;
+}
+.viewSi{
+    z-index: 10;
+}
+.viewSi:hover{
+    z-index: 0;
+}
+.viewNo{
+    z-index: 5;
+}
+.viewNo:hover{
+    z-index: 20;
+}
+.titleContacto{
+    text-decoration: underline;
+}
+.center{
+    justify-content: center;
+    max-height: 85.714rem;
+    display: grid;
+}
+
+.grillaRedes{
+    background-color: rgba(181, 239, 241, 0.616);
+    border:solid rgb(0, 0, 0) 0.089rem;
+    display:grid;
+    grid-template-columns: 3fr 2.9fr 1fr;
+    grid-template-rows: .1fr 1.9fr .1fr;
+    grid-template-areas:
+    "title title title"
+    "wppPhoto fbPhoto igPhoto"
+    "wppMsg fbMsg igMsg";
+}
+.title{
+    background-color: rgba(143, 143, 56, 0.671);
+    text-align: center;
+    grid-area: title;
+}
+.fotoRedes{
+    max-height: 8.929rem;
+    max-width: 8.929rem;
+}
+.igFoto{
+    grid-area: igPhoto;
+}
+.igFoto img{
+    background-color: rgba(181, 239, 241, 0.616);
+    width: 8.929rem;
+}
+.igDesc{
+    grid-area: igMsg;
+}
+.fbFoto{
+    grid-area: fbPhoto;
+}
+.fbFoto img{
+    width: 8.929rem;
+}
+.fbDesc{
+    grid-area: fbMsg;
+}
+.wppFoto img{
+    background-color: rgba(181, 239, 241, 0.223rem);
+    width: 8.929rem;
+    grid-area: wppPhoto;
+}
+.wppDesc{
+    grid-area: wppMsg;
+}
+#footer{
+    min-height: 1.818rem;
+    background-color: gray;
+    margin-bottom: -4.955rem;
+    margin-top : -2.5rem;
+    font-size: 0.682rem;
+}
