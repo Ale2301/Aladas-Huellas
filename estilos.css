@@ -7,11 +7,18 @@
     font-family: 'Lora', serif;
     margin-bottom: 2.455rem;
 }
+#autoTextTres{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
 body{
     background-color:rgb(122, 191, 248) 
 }
 .err{
     display: none;
+}
+.titleContacto .extra{
+    font-size: 1rem;
 }
 #contenedor{
     background-color:rgb(122, 191, 248)
@@ -21,7 +28,7 @@ body{
 }
 #header{
     margin-bottom: 0rem;
-    background-image: url(https://static1.elcorreo.com/www/multimedia/202002/14/media/cortadas/cieloazul1-k1zG-U100155473657HzH-1968x1216@RC.jpg);
+    background-image: url("./assets/sky.png");
     background-size: cover; 
     max-height: 8.75rem;
     display:grid;
@@ -40,6 +47,7 @@ body{
     opacity: 90%;
 }
 #name{
+    opacity: 100%;
     display: flex;
     grid-area: name;
     font-size: 3.182rem;
@@ -61,13 +69,17 @@ body{
     margin-left: 0.318rem;
     margin-right: 0.136rem;
 }
+.titleContacto{
+    text-decoration: underline;
+    margin-top: 0rem;
+}
 .titleContacto p{
     font-size: 2.009rem;
     text-align: center;
 }
 .descripcion{
     background-color: rgba(4,77,173,255);
-    height: 13.636rem;
+    height: 16rem;
 }
 .descripcion p{
     font-size: 2.409rem;
@@ -155,61 +167,12 @@ body{
 .viewNo:hover{
     z-index: 20;
 }
-.titleContacto{
-    text-decoration: underline;
-}
 .center{
-    justify-content: center;
-    max-height: 85.714rem;
-    display: grid;
-}
-
-.grillaRedes{
-    background-color: rgba(181, 239, 241, 0.616);
-    border:solid rgb(0, 0, 0) 0.089rem;
-    display:grid;
-    grid-template-columns: 3fr 2.9fr 1fr;
-    grid-template-rows: .1fr 1.9fr .1fr;
-    grid-template-areas:
-    "title title title"
-    "wppPhoto fbPhoto igPhoto"
-    "wppMsg fbMsg igMsg";
-}
-.title{
-    background-color: rgba(143, 143, 56, 0.671);
     text-align: center;
-    grid-area: title;
-}
-.fotoRedes{
-    max-height: 8.929rem;
-    max-width: 8.929rem;
-}
-.igFoto{
-    grid-area: igPhoto;
-}
-.igFoto img{
-    background-color: rgba(181, 239, 241, 0.616);
-    width: 8.929rem;
-}
-.igDesc{
-    grid-area: igMsg;
-}
-.fbFoto{
-    grid-area: fbPhoto;
-}
-.fbFoto img{
-    width: 8.929rem;
-}
-.fbDesc{
-    grid-area: fbMsg;
-}
-.wppFoto img{
-    background-color: rgba(181, 239, 241, 0.223rem);
-    width: 8.929rem;
-    grid-area: wppPhoto;
-}
-.wppDesc{
-    grid-area: wppMsg;
+    max-height: 85.714rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: grid;
 }
 #footer{
     min-height: 1.818rem;
@@ -217,4 +180,10 @@ body{
     margin-bottom: -4.955rem;
     margin-top : -2.5rem;
     font-size: 0.682rem;
+}
+.blanco{
+    color: white;
+}
+.negro{
+    color: black;
 }
