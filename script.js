@@ -1,4 +1,4 @@
-console.log("hola")
+console.log("si puedes leer esto alejo no hizo su trabajo :/")
 function escribir(elemento,texto,delay) {
 	temporal = document.getElementById(elemento).innerHTML;
 	temporal = temporal.concat(texto.charAt(0));
@@ -28,7 +28,7 @@ function cambiarColores(colorcito){
         color.classList.remove(colorcito)
         let colores = colorAzar()
         cambiarColores(colores)
-    }, 1000);
+    }, 500);
 }
 let checkColor = 0;
 function repetirFuncion(){

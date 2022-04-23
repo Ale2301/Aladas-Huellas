@@ -26,6 +26,9 @@ body{
 .sub{
     text-decoration: underline;
 }
+h2{
+    text-decoration: underline;
+}
 #header{
     margin-bottom: 0rem;
     background-image: url("./assets/sky.png");
@@ -55,11 +58,12 @@ body{
     flex-direction: row;
     margin-top: 1.136rem;
 }
-#name span{
+#name h1{
     font-size: 3.545rem;
     margin-top: 1.136rem;
     font-family: 'Passions Conflict', cursive;
     text-decoration: underline;
+    font-weight: 1;
 }
 .titulito{
     justify-content: center;
@@ -174,6 +178,10 @@ body{
     margin-bottom: 1rem;
     display: grid;
 }
+h2{
+    text-align: center;
+    font-weight: 0;
+}
 #footer{
     min-height: 1.818rem;
     background-color: gray;
@@ -186,4 +194,28 @@ body{
 }
 .negro{
     color: black;
+}
+@media (min-width: 992px) and (max-width: 1312px){
+    #header{
+        grid-template-columns: 2.5fr 7fr;
+    }
+    .descripcion{
+        height: 17rem;
+    }
+}
+@media (min-width: 688px) and (max-width: 992px){
+    #header{
+        grid-template-columns: 2fr 7fr;
+    }
+    #autoText{
+        font-size: 1rem;
+    }
+    #autoTextTres{
+        font-size: 1.5rem;
+    }
+
+    .botonDeWppSticky{
+        bottom: -1rem;
+        width: 7.5rem;
+    }
 }
