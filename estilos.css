@@ -219,3 +219,63 @@ h2{
         width: 7.5rem;
     }
 }
+@media (min-width: 488px) and (max-width: 688px){
+    *{
+        font-size: 1rem;
+    }
+    .logo{
+        height: 4rem;
+        width: 4rem;
+    }
+    #name h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    #header{
+        grid-template-columns: 1.3fr 7fr;
+    }
+    .grillaContacto{
+        width: 30rem;
+    }
+    .align{
+        text-align: left;
+    }
+    .botonDeWppSticky{
+        bottom: -1rem;
+        width: 7.5rem;
+        left: 0.1rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 488px){
+    *{
+        font-size: 1rem;
+    }
+    #header{
+        grid-template-columns: 1.05fr 12fr;
+    }
+    #name h1{
+        font-size: 3rem;
+    }
+    .alas{
+        height: 3rem;
+    }
+    .logo{
+        display:none;
+        height: 0px;
+    }
+    .descripcion{
+        height: 23rem;
+    }
+    #autoTextTres{
+        font-size: 1.2rem;
+    }
+    .grillaContacto{
+        width: 20rem;
+    }
+    .botonDeWppSticky{
+        bottom: -1rem;
+        width: 5.5rem;
+    }
+}
